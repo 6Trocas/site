@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+
+.App-Header {
+  background-color:rgba(227, 255, 250, 0.45);
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.App-Button {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: #04ADBF;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 0.70em;
+  border: none;
+}
+
+.App-Button:hover {
+  transition: all 0.3s;
+  background-color: #D9043D;
+}
+
+.Main-Image {
+  position: relative;
+  color: white;
+}
+
+.Main-Text {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-20%, -80%);
+}
+
+.Main-Text h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.Main-Text h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media (max-width:768px) {
+  .Main-Text {
+    left:0;
+    transform: translate(-0%, -70%);
+  }
+
+  .Main-Text h1 {
+    font-size: 1.9em;
+  }
+
+  .Main-Text h4 {
+    font-size: 1.2em;
+  }
+}
+
+.Main-Button {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: #04ADBF;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1em;
+  border: none;
+}
+
+.Main-Button:hover {
+  transition: all 0.3s;
+  background-color: #D9043D;
+}
+
+.Main-Slider {
+  width: 100%;
+  filter: brightness(.4);
+}
+
+.Main-Slider-Mobile {
+  width: 100%;
+  filter: brightness(.4);
+}
+
+.Mobile {
+  display:none;
+}
+
+@media (max-width:768px) {
+  .Desktop {
+    display:none;
+  }
+
+  .Mobile {
+    display:block;
+  }
+}
+
+.Main-Guide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.Main-Guide-Item {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #FFFFFF;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.Main-Title h1 {
+  font-family: 'Ubuntu';
+  color: black;
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.Main-Title h3 {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .Main-Title h1 {
+    margin-top: 0.65em;
+    font-size: 1.5em;
+  }
+  .Main-Title h3 {
+    font-size: 1em;
+  }
+}
+
+.Main-Line hr {
+  height: 3px;
+  background-image: linear-gradient(to right, #D9043D 50%, #04ADBF 50%);
+  border: none;
+  margin-top: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+@media (max-width: 768px) {
+  .Main-Line hr {
+    margin-top: 2em; 
+  }
+}
+
+.Main-Products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  background-color: #EDEDED;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.Product {
+  background-color: #FFF;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex: 1 0 20%;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.User-Data {
+  display: flex;  
+}
+
+.User-Picture {
+  flex-direction: column;
+  width: 40%;
+  border-radius: 100px;
+}
+
+.User-Name {
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.User-Name p {
+  margin: 0 !important;
+}
+
+.User-Name span {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+
+.User-Items {
+  display: flex;
+  flex-direction: row;
+}
+
+.User-Products span {
+  padding: 0.50em;
+  background-color: #04ADBF;
+  border-radius: 30px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 0.8em;
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+.User-Desires span {
+  padding: 0.50em;
+  background-color: #D9043D;
+  border-radius: 30px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 0.8em;
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+@media (max-width: 768px) {
+  .Main-Products {
+    flex-direction: column;
+    margin-top: 1.5em;
+  }
+  .Product {
+    margin: 0.8em;
+    padding: 0.8em;
+    display: flex;
+  }
+  .User-Picture {
+    width: 60%;
+    border-radius: 100px;
+  }
+}
+
+.Main-Explanation {
+  margin-top: 5em;
+}
+
+.Explanation-SubTitle h3 {
+  font-weight: 400;
+}
+
+.Advantage {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.Advantage-Image {
+  width: 20%;
+}
+
+.Advantages {
+  padding: 3em;
+}
+
+.Advantages h3 {
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .Advantage {
+    flex-direction: column;
+  }
+}
+
+.Action-Button {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: #04ADBF;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.5em;
+  border: none;
+}
+
+.Action-Button:hover {
+  transition: all 0.3s;
+  background-color: #D9043D;
+}
+
+.Main-Logo {
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 50%;
+  display: flex;
+  margin-left: 5em;
+}
+
+.Main-Interact {
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 50%;
+  display: flex;
+  margin-right: 5em;
+}
+
+.App-Footer {
+  display: flex;
+  background-color:rgba(227, 255, 250, 0.45);
+  margin-top: 5em;
+  padding: 2em;
+}
+
+.Footer-Items {
+  flex-direction: row;
+  flex: 1;
+  text-align: left;
+}
+
+.Footer-Items ul {
+  list-style: none;
+  float: left;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.Footer-Items h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.Social-Icons {
+  color: #04ADBF;
+  font-size: 35px;
+  padding-right: 0.37em;
+}
+
+@media (max-width: 768px) {
+  .App-Footer {
+    flex-direction: column;
+  }
+}
+
+.Footer-Line hr {
+  height: 3px;
+  background-image: linear-gradient(to right, #D9043D 50%, #04ADBF 50%);
+  border: none;
+  margin-right: 2em;
+}
+
+@media (max-width: 768px) {
+  .Footer-Line hr {
+    margin-top: 2em; 
+  }
+}
+
+.Final-Footer {
+  background-color: #04ADBF;
+  color: #FFF;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  margin-top: 1em;
+  font-size: 0.8em;
+}
