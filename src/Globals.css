@@ -164,15 +164,9 @@
   height: 3px;
   background-image: linear-gradient(to right, #D9043D 50%, #04ADBF 50%);
   border: none;
-  margin-top: 3em;
+  margin-top: 1em;
   margin-left: 5em;
   margin-right: 5em;
-}
-
-@media (max-width: 768px) {
-  .Main-Line hr {
-    margin-top: 2em; 
-  }
 }
 
 .Main-Products {
@@ -181,12 +175,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 3em;
-  background-color: #EDEDED;
-  margin-left: 5em;
-  margin-right: 5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
 }
 
 .Product {
@@ -197,6 +188,7 @@
   flex: 1 0 20%;
   flex-direction: column;
   border-radius: 10px;
+  border: 1px solid rgb(198, 198, 198);
 }
 
 .User-Data {
@@ -268,7 +260,9 @@
 }
 
 .Main-Explanation {
-  margin-top: 5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #F3EED9;
 }
 
 .Explanation-SubTitle h3 {
@@ -339,7 +333,7 @@
 .App-Footer {
   display: flex;
   background-color:rgba(227, 255, 250, 0.45);
-  margin-top: 5em;
+  margin-top: 1em;
   padding: 2em;
 }
 
@@ -394,4 +388,19 @@
   padding-bottom: 0.45em;
   margin-top: 1em;
   font-size: 0.8em;
+}
+
+.icon_footer {
+  text-decoration: none;
+  color: #000000;
+}
+
+.icon_footer:hover {
+  color: #D9043D;
+  transition: all 0.3s;
+}
+
+.Footer-Items li {
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
 }
