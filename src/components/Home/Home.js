@@ -7,7 +7,6 @@ import userImage from '../../images/user-example.jpeg';
 import advantage01 from '../../images/advantage01.png';
 import advantage02 from '../../images/advantage02.png';
 import advantage03 from '../../images/advantage03.png';
-import iphone8 from '../../images/iphone8.jpg';
 import '../../Globals.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -318,6 +317,58 @@ const Home = () =>{
             </div>
           </div>
           
+          <div className="Product">
+            <div className="User-Data">
+              <div className="User-Picture">
+                <img src={userImage} className="User-Picture" alt="User" />
+              </div>
+              <div className="User-Name">
+                <p>Marcos Roberto</p>
+                <span>São Lourenço/MG</span>
+              </div>  
+            </div>
+            <div className="User-Items">
+              <div className="User-Products">
+                <p>Produtos:</p>
+                <span>iPhone 8</span>
+                <span>Samsung S10</span>
+                <span>Motorola G7</span>
+              </div>
+              <div className="User-Desires">
+                <p>Desejos:</p>
+                <span>X-Box 360</span>
+                <span>Playstation 4</span>
+                <span>Notebook Acer</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="Product">
+            <div className="User-Data">
+              <div className="User-Picture">
+                <img src={userImage} className="User-Picture" alt="User" />
+              </div>
+              <div className="User-Name">
+                <p>Marcos Roberto</p>
+                <span>São Lourenço/MG</span>
+              </div>  
+            </div>
+            <div className="User-Items">
+              <div className="User-Products">
+                <p>Produtos:</p>
+                <span>iPhone 8</span>
+                <span>Samsung S10</span>
+                <span>Motorola G7</span>
+              </div>
+              <div className="User-Desires">
+                <p>Desejos:</p>
+                <span>X-Box 360</span>
+                <span>Playstation 4</span>
+                <span>Notebook Acer</span>
+              </div>
+            </div>
+          </div>
+
           <div className="Product">
             <div className="User-Data">
               <div className="User-Picture">

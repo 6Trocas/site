@@ -49,6 +49,13 @@
   transform: translate(-20%, -80%);
 }
 
+.Main-Text-Internal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .Main-Text h1 {
   text-transform: uppercase;
   margin: 0;
@@ -101,6 +108,10 @@
 .Main-Slider {
   width: 100%;
   filter: brightness(.4);
+}
+
+.Main-Slider-Internal {
+  width: 100%;
 }
 
 .Main-Slider-Mobile {
@@ -390,6 +401,10 @@
   font-size: 0.8em;
 }
 
+.Final-Footer span {
+  font-weight: bold;
+}
+
 .icon_footer {
   text-decoration: none;
   color: #000000;
@@ -403,4 +418,24 @@
 .Footer-Items li {
   padding-top: 0.45em;
   padding-bottom: 0.45em;
+}
+
+.Internal_Text {
+  margin-left: 4em;
+  margin-right: 4em;
+  padding: 3em;
+}
+
+.Main-Interact li {
+  display: inline;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+
+
+
+.User-Picture-Top {
+  width: 6%;
+  border-radius: 100px;
 }

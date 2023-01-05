@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
-import mainImage from '../../images/mainImage.jpg';
-import mainImageSm from '../../images/mainImage_sm.jpg'
+import mainImage from '../../images/banner-logado.jpg';
 import userImage from '../../images/user-example.jpeg';
 import advantage01 from '../../images/advantage01.png';
 import advantage02 from '../../images/advantage02.png';
 import advantage03 from '../../images/advantage03.png';
-import iphone8 from '../../images/iphone8.jpg';
 import '../../Globals.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faGift } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faExchange } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -31,31 +32,337 @@ const Logged = () => {
                     </Link>
                 </div>
                 <div className="Main-Interact">
-                    <Link to="/logged" className="App-Button"><FontAwesomeIcon icon={faUser} /> Entrar</Link>
+                    <ul>
+                        <li><Link to="/"><FontAwesomeIcon icon={faGift} /></Link></li>
+                        <li><Link to="/"><FontAwesomeIcon icon={faHeart} /></Link></li>
+                        <li><Link to="/"><FontAwesomeIcon icon={faExchange} /></Link></li>
+                        <li><Link to="/"><FontAwesomeIcon icon={faUsers} /></Link></li>
+                        <li><img src={userImage} className="User-Picture-Top" alt="User" /></li>
+                    </ul>
                 </div>
             </header>
 
             <main className="App-Main">
-                {/* Main Image */}
-                {/* <div className="Main-Image Desktop">
-                    <img src={mainImage} className="Main-Slider" alt="6 Trocas" />
+                <div className="Main-Image Desktop">
+                    <img src={mainImage} className="Main-Slider-Internal" alt="6 Trocas" />
                     <div className="Main-Text">
                         <h1>Faça trocas surpreendentes</h1>
-                        <h4>Economize e tenha o produto que sempre quis, na palma da sua mão</h4>
-                        <button onClick={handleClick} className="Main-Button">Cadastre-se agora</button>
                     </div>
-                    </div> */}
-
-                <div className="Main-Image Mobile">
-                    {/* <img src={mainImageSm} className="Main-Slider-Mobile" alt="6 Trocas" />
-                    <div className="Main-Text">
-                        <h1>Faça trocas surpreendentes</h1>
-                        <h4>Economize e tenha o produto que sempre quis, na palma da sua mão</h4>
-                        <button onClick={handleClick} className="Main-Button">Cadastre-se agora</button>
-                    </div> */}
                 </div>
 
                 <div className="Main-Products">
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                {/* <img src={iphone8} className="product-image" alt="Iphone 8" /> */}
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className="Product">
                         <div className="User-Data">
@@ -72,6 +379,32 @@ const Logged = () => {
                                 <p>Produtos:</p>
                                 <span>iPhone 8</span>
                                 {/* <img src={iphone8} className="product-image" alt="Iphone 8" /> */}
+                                <span>Samsung S10</span>
+                                <span>Motorola G7</span>
+                            </div>
+                            <div className="User-Desires">
+                                <p>Desejos:</p>
+                                <span>X-Box 360</span>
+                                <span>Playstation 4</span>
+                                <span>Notebook Acer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Product">
+                        <div className="User-Data">
+                            <div className="User-Picture">
+                                <img src={userImage} className="User-Picture" alt="User" />
+                            </div>
+                            <div className="User-Name">
+                                <p>Marcos Roberto</p>
+                                <span>São Lourenço/MG</span>
+                            </div>
+                        </div>
+                        <div className="User-Items">
+                            <div className="User-Products">
+                                <p>Produtos:</p>
+                                <span>iPhone 8</span>
                                 <span>Samsung S10</span>
                                 <span>Motorola G7</span>
                             </div>
